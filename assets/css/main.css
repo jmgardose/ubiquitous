@@ -2,6 +2,11 @@
 @import url(font-awesome.min.css);
 @import "https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600";
 
+:root {
+  --d_orange: #ff7400;
+  --d_opaque_orange: rgba(255, 116, 0, 0.90);
+}
+
 /*
 	Projection by TEMPLATED
 	templated.co @templatedco
@@ -2554,7 +2559,8 @@
 		input[type="button"]:hover,
 		button:hover,
 		.button:hover {
-			background-color: rgba(108, 192, 145, 0.15);
+			/*background-color: rgba(108, 192, 145, 0.15);*/
+			background-color: var(--d_opaque_orange);
 		}
 
 		input[type="submit"]:active,
@@ -2622,7 +2628,8 @@
 			input[type="button"].alt:hover,
 			button.alt:hover,
 			.button.alt:hover {
-				background-color: #7ec89e;
+				/*background-color: #7ec89e;*/
+				background-color: var(--d_opaque_orange);
 			}
 
 			input[type="submit"].alt:active,
@@ -2730,7 +2737,7 @@
 		#header .logo {
 			color: #ffffff;
 			display: inline-block;
-			font-weight: 400;
+			font-weight: 300;
 			height: inherit;
 			left: 0;
 			line-height: inherit;
@@ -2746,6 +2753,14 @@
 				font-weight: 600;
 			}
 
+			#header .letter_q {
+				color: var(--d_orange);
+				font-size: 2em;
+				display: inline-block;
+				vertical-align: middle;
+				padding-bottom: 8px;
+			}
+
 		#header a {
 			-moz-transition: color 0.2s ease-in-out;
 			-webkit-transition: color 0.2s ease-in-out;
@@ -2759,7 +2774,7 @@
 		}
 
 			#header a:hover {
-				color: #ffffff;
+				color: var(--d_orange);
 			}
 
 			#header a:last-child {
@@ -2921,14 +2936,15 @@
 /* Banner */
 
 	#banner {
-		padding: 8em 0 9em 0;
-		background-image: url(../../images/banner.jpg);
+		padding: 8em 0 15em 0;
+		background-image: url(../../images/banner/Slow_Typer.jpg);
 		background-size: cover;
 		background-position: bottom;
 		background-attachment: fixed;
 		background-repeat: no-repeat;
 		text-align: center;
 		position: relative;
+		overflow: hidden;
 	}
 
 		#banner:before {
@@ -3138,7 +3154,7 @@
 
 
 	#footer {
-		padding: 6em 0;
+		padding: 5em 0;
 		background: #6cc091;
 		color: #fff;
 		text-align: center;
@@ -3157,9 +3173,17 @@
 		#footer .copyright {
 			color: rgba(255, 255, 255, 0.5);
 			font-size: 0.8em;
-			margin: 0 0 2em 0;
+			margin: 0;
 			padding: 0;
 		}
+
+		#footer .icon {
+			color: var(--d_opaque_orange);
+			font-size: 1.2em;
+		}
+			#footer .icon:hover {
+				color: #FFF;
+			}
 
 			#footer .copyright a {
 				color: rgba(255, 255, 255, 0.5);
