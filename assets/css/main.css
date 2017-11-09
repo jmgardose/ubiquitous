@@ -2,11 +2,6 @@
 @import url(font-awesome.min.css);
 @import "https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600";
 
-:root {
-  --d_orange: #ff7400;
-  --d_opaque_orange: rgba(255, 116, 0, 0.90);
-}
-
 /*
 	Projection by TEMPLATED
 	templated.co @templatedco
@@ -2560,7 +2555,7 @@
 		button:hover,
 		.button:hover {
 			/*background-color: rgba(108, 192, 145, 0.15);*/
-			background-color: var(--d_opaque_orange);
+			background-color: rgba(255, 116, 0, 0.90);
 		}
 
 		input[type="submit"]:active,
@@ -2629,7 +2624,7 @@
 			button.alt:hover,
 			.button.alt:hover {
 				/*background-color: #7ec89e;*/
-				background-color: var(--d_opaque_orange);
+				background-color: rgba(255, 116, 0, 0.90);
 			}
 
 			input[type="submit"].alt:active,
@@ -2754,7 +2749,7 @@
 			}
 
 			#header .letter_q {
-				color: var(--d_orange);
+				color: #ff7400;
 				font-size: 2em;
 				display: inline-block;
 				vertical-align: middle;
@@ -2774,7 +2769,7 @@
 		}
 
 			#header a:hover {
-				color: var(--d_orange);
+				color: #ff7400;
 			}
 
 			#header a:last-child {
@@ -3178,7 +3173,7 @@
 		}
 
 		#footer .icon {
-			color: var(--d_opaque_orange);
+			color: rgba(255, 116, 0, 0.90);
 			font-size: 1.2em;
 		}
 			#footer .icon:hover {
