@@ -1845,6 +1845,9 @@
 				text-align: center;
 			}
 
+			section br {
+				display: none;
+			} 
 		}
 
 	header p {
@@ -1973,11 +1976,9 @@
 		-webkit-appearance: none;
 		-ms-appearance: none;
 		appearance: none;
-		background: #6cc091;
 		border-radius: 10px;
 		border: none;
 		border: solid 2px #8dcca9;
-		color: #fff;
 		display: block;
 		outline: 0;
 		padding: 0 1em;
@@ -2000,8 +2001,8 @@
 		input[type="tel"]:focus,
 		select:focus,
 		textarea:focus {
-			border-color: #4bae77;
-			box-shadow: 0 0 0 1px #4bae77;
+			border-color: rgba(255, 116, 0, 0.50);
+			box-shadow: 0 0 0 1px rgba(255, 116, 0, 0.50);
 		}
 
 	.select-wrapper {
@@ -2273,7 +2274,7 @@
 	ol {
 		list-style: decimal;
 		margin: 0 0 2em 0;
-		padding-left: 1.25em;
+		padding-left: 1em;
 	}
 
 		ol li {
@@ -2438,7 +2439,7 @@
 		dl dt {
 			display: block;
 			font-weight: 600;
-			margin: 0 0 1em 0;
+			margin: 0 0 1em 1em;
 		}
 
 		dl dd {
@@ -2553,7 +2554,7 @@
 		button:hover,
 		.button:hover {
 			/*background-color: rgba(108, 192, 145, 0.15);*/
-			background-color: rgba(255, 116, 0, 0.90);
+			background-color: rgba(255, 116, 0, 0.85);
 		}
 
 		input[type="submit"]:active,
@@ -2622,7 +2623,7 @@
 			button.alt:hover,
 			.button.alt:hover {
 				/*background-color: #7ec89e;*/
-				background-color: rgba(255, 116, 0, 0.90);
+				background-color: rgba(255, 116, 0, 0.85);
 			}
 
 			input[type="submit"].alt:active,
@@ -2707,6 +2708,7 @@
 			height: 44px;
 			line-height: 44px;
 			position: fixed;
+			padding: 0.7em 0 3.2em 0;
 		}
 
 	#header {
@@ -2836,6 +2838,10 @@
 
 	}
 
+	#nav .active {
+		color: #ff7400;
+	}
+
 	#navPanel {
 		-moz-transform: translatex(20em);
 		-webkit-transform: translatex(20em);
@@ -2923,9 +2929,12 @@
 			}
 
 			#navPanel .close:hover {
-				color: inherit;
+				color: #ff7400;
 			}
 
+			#navPanel a:hover {
+				color: #ff7400;
+			}
 /* Banner */
 
 	#banner {
@@ -3185,7 +3194,7 @@
 			font-size: 1.2em;
 		}
 			#footer .icon:hover {
-				color: rgba(255, 116, 0, 0.90);
+				color: rgba(255, 116, 0, 0.85);
 			}
 
 			#footer .copyright a {
@@ -3196,6 +3205,13 @@
 				#footer .copyright a:hover {
 					color: #FFF;
 				}
+
+			#footer.contact input[type="text"],
+			#footer.contact input[type="email"],
+			#footer.contact textarea {
+				background: #6cc091;
+				color: #fff;
+			}
 
 		@media screen and (max-width: 980px) {
 
