@@ -87,4 +87,18 @@
 			scrollTop: $(".contact").offset().top},
 			'slow');
 	});
+
+	$('.item').each(function() {
+		
+		var $this = $(this),
+			$header = $this.find('header'),
+			$a = $header.find('a'),
+			$img = $header.find('img');
+
+		// Set background.
+			$a.css('background-image', 'url(' + $img.attr('src') + ')');
+
+		// Remove original image.
+			$img.remove();
+	});
 })(jQuery);
