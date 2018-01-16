@@ -3642,3 +3642,8 @@
 				}
 
 		}
+
+/* enable SPAM prevention */
+	#honeypot {
+		display: none; /*makes the field not visible to humans*/
+	}

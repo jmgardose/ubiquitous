@@ -86,6 +86,8 @@
 		$('html,body').animate({
 			scrollTop: $(".contact").offset().top},
 			'slow');
+		$('#gform').css('display', 'block');
+		$('#thankyou_message').css('display', 'none');
 	});
 
 	$('.item').each(function() {

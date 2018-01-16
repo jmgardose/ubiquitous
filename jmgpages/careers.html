@@ -239,7 +239,8 @@
 			<div class="inner">
 				<h3>Get in touch</h3>
 					
-				<form action="#" method="post">
+				<form id="gform" method="POST" class="pure-form pure-form-stacked" data-email="example@email.net"
+					action="https://script.google.com/macros/s/AKfycbzht3o9p0lzRb56dXgO9kBFFG_JMNEz_0JPJrofUqOt2_NA4eU/exec">
 
 					<div class="field half first">
 						<label for="name">Name</label>
@@ -253,10 +254,16 @@
 						<label for="message">Message</label>
 						<textarea name="message" id="message" rows="6" placeholder="Enter your message" required></textarea>
 					</div>
+					<input id="honeypot" type="text" name="honeypot" value="" />
 					<ul class="actions">
 						<li><input value="Send Your Message" class="button alt" type="submit"></li>
 					</ul>
 				</form>
+
+				<div class="align-center" style="display:none;height:480px;" id="thankyou_message">
+					<h2><em>Thanks</em> for contacting us!
+					We will get back to you soon!</h2>
+				</div>
 
 				<p class="follow_us">connect with us</p>
 				<ul class="icons">
@@ -277,6 +284,6 @@
 		<script src="../assets/js/skel.min.js"></script>
 		<script src="../assets/js/util.js"></script>
 		<script src="../assets/js/main.js"></script>
-
+		<script data-cfasync="false" src="../assets/js/form-submission-handler.js"></script>
 	</body>
 </html>

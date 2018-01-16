@@ -27,22 +27,20 @@
 					<a href="services.html">SERVICES</a>
 					<a href="products.html">PRODUCTS</a>
 					<a href="careers.html">CAREERS</a>
-					<a class="active" href="#">CONTACT</a>
+					<a class="active" href="contact.html">CONTACT</a>
 				</nav>
 				<a href="#navPanel" class="navPanelToggle"><span class="fa fa-bars"></span></a>
 			</div>
 		</header>
 
-		<!-- Three -->
 		<section id="three" class="wrapper">
 			<div class="inner">
-				<header class="align-center">
-					<h2>We'd like to hear from you</h2>
-					<p>Let's discuss how we can help, please complete the form below or <br>feel free to send an email to <a href="mailto:info@ubiquitous-tech.com">info@ubiquitous-tech.com</a> directly.</p>
-				</header>
-				
-				
-				<form action="#" method="post">							
+				<form id="gform" method="POST" class="pure-form pure-form-stacked" data-email="example@email.net"
+					action="https://script.google.com/macros/s/AKfycbwv67dgwnXHlHb9qF2tRPKvDNBSO8s-THicCVYnMeHo4uUeIHLG/exec">
+					<header class="align-center">
+						<h2>We'd like to hear from you</h2>
+						<p>Let's discuss how we can help, please complete the form below or <br>feel free to send an email to <a href="mailto:info@ubiquitous-tech.com">info@ubiquitous-tech.com</a> directly.</p>
+					</header>						
 					<div class="field half first">
 						<label for="name">Name</label>
 						<input name="name" id="name" type="text" placeholder="Enter your name" required>
@@ -54,23 +52,23 @@
 
 					<div class="field half first">
 						<label for="tel_num">Contact number</label>
-						<input name="name" id="tel_num" type="text" placeholder="Telephone number if any">
+						<input name="tel_num" id="tel_num" type="text" placeholder="Telephone number if any">
 					</div>
 					<div class="field half">
-						<label for="address">Address</label>
-						<input name="email" id="address" type="text" placeholder="Enter your location">
+						<label for="location">Address</label>
+						<input name="location" id="location" type="text" placeholder="Enter your location">
 					</div>
 
 					<div class="field">
 						<div class="select-wrapper">
-							<label for="demo-category">What kind of service you are looking for?</label>
-							<select name="demo-category" id="demo-category">
+							<label for="service-inquiry">What kind of service you are looking for?</label>
+							<select name="service-inquiry" id="service-inquiry">
 								<option value="">- Category -</option>
-								<option value="Software">Software Development</option>
-								<option value="Hardware">Hardware Manufacturing</option>
-								<option value="Automation">Factory Automation</option>
-								<option value="Consultation">Outsourcing</option>
-								<option value="Others">Others</option>
+								<option value="Software Development service">Software Development</option>
+								<option value="Hardware Manufacturing service">Hardware Manufacturing</option>
+								<option value="Factory Automation service">Factory Automation</option>
+								<option value="Outsourcing service">Outsourcing</option>
+								<option value="Other service">Others</option>
 							</select>
 						</div>
 					</div>
@@ -79,11 +77,18 @@
 						<label for="message">Message</label>
 						<textarea name="message" id="message" rows="6" placeholder="Enter your message" required></textarea>
 					</div>
-					
+
+					<input id="honeypot" type="text" name="honeypot" value="" />
+
 					<ul class="actions align-center">
 						<li><input value="Send Your Message" class="button" type="submit"></li>
 					</ul>
 				</form>
+
+				<div class="align-center" style="display:none;height:480px;" id="thankyou_message">
+					<h2><em>Thanks</em> for contacting us!
+					We will get back to you soon!</h2>
+				</div>
 			</div>
 		</section>
 
@@ -109,6 +114,7 @@
 		<script src="../assets/js/skel.min.js"></script>
 		<script src="../assets/js/util.js"></script>
 		<script src="../assets/js/main.js"></script>
+		<script data-cfasync="false" src="../assets/js/form-submission-handler.js"></script>
 
 	</body>
 </html>
