@@ -2,7 +2,7 @@ function initMap() {
     var locations = [
 		['2-24-13, Jinden-cho Kandamachi, Miyako-gun, Fukouka-ken Japan', 33.792722, 130.980963, 3],
 		['7F Fukuhisa Building 4-49 MinamiNakadori, Nakaku,Yokohama-shi Japan', 35.448711, 139.637684, 2],
-		['7F King\'s Court Building 2., Makati, NCR, Chino Roces Avenue, Makati, NCR, Philippines', 14.5576173, 121.0112967, 1]
+		['5F King\'s Court Building 1, Makati, Chino Roces Avenue, Makati, NCR, Philippines', 14.5576173, 121.0112967, 1]
 	];
   
 	var map = new google.maps.Map(document.getElementById('map'), {
