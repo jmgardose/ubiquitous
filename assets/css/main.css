@@ -16,7 +16,6 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, p, a, em, img, st
   margin: 0;
   padding: 0;
   border: 0;
-  font-size: 100%;
   font: inherit;
   vertical-align: baseline;
 }
@@ -38,7 +37,6 @@ q {
 }
 
 q:before,q:after {
-  content: '';
   content: none;
 }
 
@@ -1164,15 +1162,13 @@ section .avatar .icon:hover {
 }
 
 section .leftCut {
-  background: linear-gradient(45deg, transparent 10px,rgba(144, 144, 144, 0.075) 0);
-  background-color: #fff;
-  padding: 5em 2em 0 2em;
+    background: #fff linear-gradient(45deg, transparent 10px, rgba(144, 144, 144, 0.075) 0);
+    padding: 5em 2em 0 2em;
 }
 
 section .rightCut {
-  background: linear-gradient(-45deg, transparent 10px,rgba(144, 144, 144, 0.075) 0);
-  background-color: #fff;
-  padding: 5em 2em 0 2em;
+    background: #fff linear-gradient(-45deg, transparent 10px, rgba(144, 144, 144, 0.075) 0);
+    padding: 5em 2em 0 2em;
 }
 
 @media screen and (max-width: 980px) {
@@ -1341,7 +1337,6 @@ header h4 + p,header h5 + p,header h6 + p {
   display: flex;
   -moz-flex-wrap: wrap;
   -webkit-flex-wrap: wrap;
-  -ms-flex-wrap: wrap;
   flex-wrap: wrap;
   width: 100%;
 }
@@ -1376,7 +1371,7 @@ header h4 + p,header h5 + p,header h6 + p {
 }
 
 .flex.flex-4 img {
-  box-shadow: 0px 0px 0px 7px #fff, 0px 0px 0px 8px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 0 0 7px #fff, 0 0 0 8px rgba(0, 0, 0, 0.1);
 }
 
 .flex.flex-4 .col {
@@ -1479,7 +1474,6 @@ input[type="text"],input[type="password"],input[type="email"],input[type="tel"],
   -ms-appearance: none;
   appearance: none;
   border-radius: 10px;
-  border: none;
   border: solid 2px #8dcca9;
   display: block;
   outline: 0;
@@ -1507,7 +1501,7 @@ input[type="text"]:focus,input[type="password"]:focus,input[type="email"]:focus,
   content: "";
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
-  font-family: FontAwesome;
+  font-family: FontAwesome, serif;
   font-style: normal;
   font-weight: normal;
   text-transform: none !important;
@@ -1566,7 +1560,7 @@ input[type="checkbox"] + label,input[type="radio"] + label {
 input[type="checkbox"] + label:before,input[type="radio"] + label:before {
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
-  font-family: FontAwesome;
+  font-family: FontAwesome, serif;
   font-style: normal;
   font-weight: normal;
   text-transform: none !important;
@@ -1660,7 +1654,7 @@ input[type="radio"] + label:before {
 .icon:before {
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
-  font-family: FontAwesome;
+  font-family: FontAwesome, serif;
   font-style: normal;
   font-weight: normal;
   text-transform: none !important;
@@ -2251,7 +2245,6 @@ input[type="submit"].disabled,input[type="submit"]:disabled,input[type="reset"].
 #navPanel a:not(.close) {
   border-top: solid 1px #8dcca9;
   color: #daefe3;
-  font-weight: 600;
   display: block;
   padding: 0.75em 0;
   text-decoration: none;
@@ -2286,7 +2279,7 @@ input[type="submit"].disabled,input[type="submit"]:disabled,input[type="reset"].
 #navPanel .close:before {
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
-  font-family: FontAwesome;
+  font-family: FontAwesome, serif;
   font-style: normal;
   font-weight: normal;
   text-transform: none !important;
@@ -2313,11 +2306,8 @@ input[type="submit"].disabled,input[type="submit"]:disabled,input[type="reset"].
 
 #banner {
   padding: 8em 0 15em 0;
-  background-image: url(../../images/banner/Slow_Typer.jpg);
   background-size: cover;
-  background-position: bottom;
-  background-attachment: fixed;
-  background-repeat: no-repeat;
+  background: url(../../images/banner/Slow_Typer.jpg) no-repeat fixed bottom;
   text-align: center;
   position: relative;
   overflow: hidden;
@@ -2643,8 +2633,7 @@ input[type="submit"].disabled,input[type="submit"]:disabled,input[type="reset"].
   -ms-transition: -ms-transform 0.2s ease;
   transition: transform 0.2s ease;
   background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
+  background: no-repeat center;
   position: absolute;
   top: 0;
   left: 0;
@@ -2661,8 +2650,7 @@ input[type="submit"].disabled,input[type="submit"]:disabled,input[type="reset"].
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.25);
-  background-image: url("images/overlay.png");
+  background: rgba(0, 0, 0, 0.25) url("images/overlay.png");
 }
 
 .item header:hover a {
