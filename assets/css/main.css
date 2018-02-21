@@ -20,7 +20,7 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, p, a, em, img, st
   vertical-align: baseline;
 }
 
-article,aside,details,figcaption,figure,footer,header,hgroup,nav,section {
+article,footer,header,nav,section {
   display: block;
 }
 
@@ -30,14 +30,6 @@ body {
 
 ol,ul {
   list-style: none;
-}
-
-q {
-  quotes: none;
-}
-
-q:before,q:after {
-  content: none;
 }
 
 table {
