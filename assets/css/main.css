@@ -2173,7 +2173,6 @@ table.alt tfoot {
 		text-align: right;
 		top: 2em;
 		width: 100%;
-		z-index: 10009;
 		-moz-transition: background-color 0.2s ease-in-out;
 		-webkit-transition: background-color 0.2s ease-in-out;
 		-ms-transition: background-color 0.2s ease-in-out;
@@ -2259,7 +2258,7 @@ table.alt tfoot {
   text-align: right;
   top: 2em;
   width: 100%;
-  z-index: 10001;
+  z-index: 10006;
 }
 
 #header .inner {
