@@ -2155,7 +2155,8 @@ table.alt tfoot {
 }
 
 .subpage #header {
-  background: #6cc091;
+/*  background: #6cc091;*/
+    background: white;
   top: 0;
 /*
   height: 44px;
@@ -2201,7 +2202,7 @@ table.alt tfoot {
   top: 0;
   font-size: 1.3em;
 */
-    background: url("../../images/ubiq_logo_x_small.png");
+    background: url("../../images/ubiq_logo_x_light_small.png");
     width: 12.25em;
     height: 3.25em;
     display: inline-block;
@@ -2209,10 +2210,12 @@ table.alt tfoot {
     position: absolute;
 }
 
+/*
 #header .logo strong {
   color: #ffffff;
   font-weight: 600;
 }
+*/
 
 #header .letter_q {
   color: #ff7400;
@@ -2252,6 +2255,16 @@ table.alt tfoot {
 
 #header a.navPanelToggle .fa {
   font-size: 1.25em;
+}
+
+/* Scroll Header */
+
+#header.scroll-header .logo {
+    background: url("../../images/ubiq_logo_x_small.png");
+}
+
+#header.scroll-header {
+  color: #555;
 }
 
 @media screen and (max-width: 980px) {
