@@ -2157,10 +2157,12 @@ table.alt tfoot {
 .subpage #header {
   background: #6cc091;
   top: 0;
+/*
   height: 44px;
   line-height: 44px;
+*/
   position: fixed;
-  padding: 0.7em 0 3.2em 0;
+  padding: 0.7em 0 4em 0;
 }
 
 #header {
@@ -2186,6 +2188,7 @@ table.alt tfoot {
 }
 
 #header .logo {
+/*
   color: #ffffff;
   display: inline-block;
   font-weight: 300;
@@ -2197,6 +2200,13 @@ table.alt tfoot {
   position: absolute;
   top: 0;
   font-size: 1.3em;
+*/
+    background: url("../../images/ubiq_logo_x_small.png");
+    width: 12.25em;
+    height: 3.25em;
+    display: inline-block;
+    left: 0;
+    position: absolute;
 }
 
 #header .logo strong {
@@ -2877,4 +2887,20 @@ table.alt tfoot {
 
 a {
 	text-decoration: none;
+}
+
+}
+
+nav {
+    display: inline;
+    float: right;
+}
+
+nav ul {
+    list-style: none;
+}
+
+
+nav ul li {
+    display: inline-block;
 }
