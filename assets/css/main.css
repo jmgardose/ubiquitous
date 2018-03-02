@@ -2188,6 +2188,7 @@ table.alt tfoot {
     background: url("../../images/ubiq_logo_x_light_small.png");
     width: 12.25em;
     height: 3.25em;
+    background-size: 12.25em 3.25em;
     left: 0;
     position: absolute;
 }
@@ -2236,6 +2237,7 @@ table.alt tfoot {
 
 #header.scroll-header .logo {
     background: url("../../images/ubiq_logo_x_small.png");
+    background-size: 12.25em 3.25em;
 }
 
 #header.scroll-header {
@@ -2300,7 +2302,6 @@ table.alt tfoot {
   right: 0;
   top: 0;
   background: #6cc091;
-  color: #daefe3;
   height: 100%;
   max-width: 80%;
   width: 20em;
@@ -2884,7 +2885,7 @@ nav {
     float: right;
 }
 
-nav ul {
+nav ul, #navPanel ul {
     list-style: none;
 }
 
