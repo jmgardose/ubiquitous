@@ -2185,10 +2185,9 @@ table.alt tfoot {
 }
 
 #header .logo {
-    background: url("../../images/ubiq_logo_x_light_small.png");
-    width: 12.25em;
+    background: url("../../images/ubiq_logo_x_long_light.svg") no-repeat;
+    width: 22.1875em;
     height: 3.25em;
-    background-size: 12.25em 3.25em;
     left: 0;
     position: absolute;
 }
@@ -2236,8 +2235,18 @@ table.alt tfoot {
 /* Scroll Header */
 
 #header.scroll-header .logo {
-    background: url("../../images/ubiq_logo_x_small.png");
-    background-size: 12.25em 3.25em;
+    background: url("../../images/ubiq_logo_x_long.svg") no-repeat;
+}
+
+@media (max-width: 525px) {
+    #header .logo {
+        height: 4.25em;
+        background: url("../../images/ubiq_logo_x_light_small.svg") no-repeat;
+    }
+    
+    #header.scroll-header .logo {
+        background: url("../../images/ubiq_logo_x_small.svg") no-repeat;
+    }
 }
 
 #header.scroll-header {
