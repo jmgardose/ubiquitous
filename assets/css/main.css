@@ -2190,6 +2190,10 @@ table.alt tfoot {
     height: 3.25em;
     left: 0;
     position: absolute;
+      -moz-transition: scale 0.2s ease-in-out;
+      -webkit-transition: scale 0.2s ease-in-out;
+      -ms-transition: scale 0.2s ease-in-out;
+      transition: scale 0.2s ease-in-out;
 }
 
 #header .letter_q {
@@ -2236,6 +2240,7 @@ table.alt tfoot {
 
 #header.scroll-header .logo {
     background: url("../../images/ubiq_logo_x_long.svg") no-repeat;
+    transform: scale(0.9);
 }
 
 @media (max-width: 525px) {
