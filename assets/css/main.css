@@ -2639,7 +2639,18 @@ table.alt tfoot {
 }
 
 #footer .icon:hover {
-  color: rgba(255, 116, 0, 0.85);
+/*  color: rgba(255, 116, 0, 0.85);*/
+}
+
+#footer li {
+  -moz-transition: -moz-transform 0.2s ease;
+  -webkit-transition: -webkit-transform 0.2s ease;
+  -ms-transition: -ms-transform 0.2s ease;
+  transition: transform 0.2s ease;
+}
+
+#footer li:hover {
+    transform: scale(1.1);
 }
 
 #footer .copyright a {
