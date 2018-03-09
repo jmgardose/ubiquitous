@@ -2185,12 +2185,15 @@ table.alt tfoot {
 }
 
 #header .logo {
-    background: url("../../images/ubiq_logo_x_light_small.png");
-    width: 12.25em;
+    background: url("../../images/ubiq_logo_x_long_light.svg") no-repeat;
+    width: 22.1875em;
     height: 3.25em;
-    background-size: 12.25em 3.25em;
     left: 0;
     position: absolute;
+      -moz-transition: scale 0.2s ease-in-out;
+      -webkit-transition: scale 0.2s ease-in-out;
+      -ms-transition: scale 0.2s ease-in-out;
+      transition: scale 0.2s ease-in-out;
 }
 
 #header .letter_q {
@@ -2236,8 +2239,19 @@ table.alt tfoot {
 /* Scroll Header */
 
 #header.scroll-header .logo {
-    background: url("../../images/ubiq_logo_x_small.png");
-    background-size: 12.25em 3.25em;
+    background: url("../../images/ubiq_logo_x_long.svg") no-repeat;
+    transform: scale(0.9);
+}
+
+@media (max-width: 525px) {
+    #header .logo {
+        height: 4.25em;
+        background: url("../../images/ubiq_logo_x_light_small.svg") no-repeat;
+    }
+    
+    #header.scroll-header .logo {
+        background: url("../../images/ubiq_logo_x_small.svg") no-repeat;
+    }
 }
 
 #header.scroll-header {
@@ -2625,7 +2639,18 @@ table.alt tfoot {
 }
 
 #footer .icon:hover {
-  color: rgba(255, 116, 0, 0.85);
+/*  color: rgba(255, 116, 0, 0.85);*/
+}
+
+#footer li {
+  -moz-transition: -moz-transform 0.2s ease;
+  -webkit-transition: -webkit-transform 0.2s ease;
+  -ms-transition: -ms-transform 0.2s ease;
+  transition: transform 0.2s ease;
+}
+
+#footer li:hover {
+    transform: scale(1.1);
 }
 
 #footer .copyright a {
