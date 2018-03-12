@@ -1800,7 +1800,7 @@ ul.actions li:last-child {
   padding-right: 0;
 }
 
-ul.actions.small li {
+ul.actions.sm li {
   padding: 0 0.5em 0 0;
 }
 
@@ -2231,7 +2231,7 @@ table.alt tfoot {
 }
 
 #header a:last-child {
-  padding-right: 0;
+/*  padding-right: 0;*/
 }
 
 #header a.navPanelToggle {
@@ -2306,8 +2306,36 @@ table.alt tfoot {
   }
 }
 
-#nav .active {
-  color: #ff7400;
+#nav a {
+  -moz-transition: all 0 1s ease;
+  -webkit-transition: all 0 1s ease;
+  -ms-transition: all 0 1s ease;
+}
+
+#nav a::after {
+/*
+    transition: opacity 0s 0s ease-in;
+    opacity: 0;
+*/
+}
+
+/*
+.scroll-header #nav a.active + #nav a::aft {
+    opacity: 1;
+    transition: opacity 1s 0s ease-in;
+}
+*/
+
+.scroll-header #nav .active {
+  color: white;
+/*  background-color: #1c6a38;*/
+    height: 4.05em !important;
+    box-shadow: 0 -1em #1c6a38, inset 0em 4em #1c6a38;
+}
+
+
+.scroll-header #nav .active:hover {
+    color: white;
 }
 
 #navPanel {
