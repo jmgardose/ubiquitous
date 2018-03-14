@@ -2356,7 +2356,7 @@ ul {
 }
 
 ul li {
-    padding-left: 0.5em;
+    /*padding-left: 0.5em;*/
 }
 
 ul.alt {
@@ -2775,7 +2775,7 @@ button:disabled,
 
 .subpage #header {
     background: white;
-    top: 0 !important;
+    top: 0;
     position: fixed;
     padding: 0.7em 0 3.6em 0;
 }
@@ -2869,10 +2869,14 @@ button:disabled,
     }
 }
 
+.hide-header {
+    position: fixed;
+    top: -5em !important;
+}
+
 header#header.scroll-header {
     color: #555;
     background: rgba(255, 255, 255, 0.9);
-    top: -50em;
     -moz-transition: top 0.5s ease-in-out;
     -webkit-transition: top 0.5s ease-in-out;
     -ms-transition: top 0.5s ease-in-out;
@@ -2911,6 +2915,10 @@ header#header.scroll-header {
 
 /* Nav */
 
+#nav {
+    display: inline-block;
+}
+
 @media screen and (max-width: 980px) {
     #nav {
         display: none;
@@ -2940,9 +2948,11 @@ header#header.scroll-header {
 .scroll-header #nav .active {
     color: white;
     /*  background-color: #1c6a38;*/
-    height: 4.05em !important;
-    box-shadow: 0 -1em #f07e1c, inset 0em 4em #f07e1c;
+    box-shadow: 0 -1em #f07e1c, inset 0em 4em #f07e1c, 0 0.38em #f07e1c;
 }
+
+
+/*height: 4.05em !important;*/
 
 .scroll-header #nav .active:hover {
     color: white;
@@ -3579,6 +3589,7 @@ nav ul, #navPanel ul {
 
 nav ul li {
     display: inline-block;
+    flex: 1 1 0;
 }
 
 /* Overlapping backgrounds */
