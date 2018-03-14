@@ -2770,12 +2770,12 @@ button:disabled,
 /* Header */
 
 .subpage {
-    padding-top: 44px;
+    /*padding-top: 44px;*/
 }
 
 .subpage #header {
     background: white;
-    top: 0;
+    top: 0 !important;
     position: fixed;
     padding: 0.7em 0 3.6em 0;
 }
@@ -2791,11 +2791,6 @@ button:disabled,
     top: 2em;
     width: 100%;
     z-index: 10006;
-
-    -moz-transition: all 0.5s ease-in-out;
-    -webkit-transition: all 0.5s ease-in-out;
-    -ms-transition: all 0.5s ease-in-out;
-    transition: all 0.5s ease-in-out;
 }
 
 #header .inner {
@@ -2877,6 +2872,11 @@ button:disabled,
 header#header.scroll-header {
     color: #555;
     background: rgba(255, 255, 255, 0.9);
+    top: -50em;
+    -moz-transition: top 0.5s ease-in-out;
+    -webkit-transition: top 0.5s ease-in-out;
+    -ms-transition: top 0.5s ease-in-out;
+    transition: top 0.5s ease-in-out;
 }
 
 @media screen and (max-width: 980px) {
