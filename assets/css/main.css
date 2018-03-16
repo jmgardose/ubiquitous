@@ -2954,7 +2954,7 @@ header#header.scroll-header {
 
 /*height: 4.05em !important;*/
 
-.scroll-header #nav .active:hover {
+.scroll-header #nav .active:hover a {
     color: white;
 }
 
