@@ -2945,6 +2945,10 @@ header#header.scroll-header {
 }
 */
 
+.scroll-header {
+    box-shadow: 0 0.1em 0.1em rgba(0, 0, 0, 0.05);
+}
+
 .scroll-header #nav .active {
     color: white;
     /*  background-color: #1c6a38;*/
@@ -3629,4 +3633,112 @@ nav ul li {
     display: block;
     position: absolute;
     left: 0.5em;
+}
+
+#banner header {
+    text-align: justify;
+    width: 60%;
+    margin: 0 auto 3em;
+}
+
+.service-block {
+/*
+    width: 80%;
+    margin: 0 auto;
+*/
+}
+
+section.wrapper .service-header {
+    display: flex;
+    background-color: #f07e1c;
+    color: white;
+    margin: 0 2em;
+/*    border-radius: 1em 1em 0em 0em;*/
+/*    box-shadow: 0.1em 0.1em 0.5em rgba(0, 0, 0, 0.25);*/
+/*    box-shadow: 0 0.1em 0em rgba(0, 0, 0, 0.1);*/
+}
+
+.service-header .icon {
+    color: white;
+    font-size: 4em;
+    padding: 0 0.25em;
+}
+
+.service-header h3 {
+    display: inline-block;
+    color: #f07e1c;
+/*    color: white;*/
+    padding: 1em 2em;
+    margin: 0;
+    font-size: 2em;
+    letter-spacing: 0.075em;
+    font-weight: bold;
+}
+
+section.wrapper h2:after {
+    content: "";
+    background-image: url("/images/ubiq_logo_flip.svg");
+    background-size: 0.75em 0.75em;
+    width: 0.75em;
+    height: 0.75em;
+    display: inline-block;
+    transform: rotate(30deg);
+    position: absolute;
+}
+
+.service-header div {
+    width: 100%;
+    background: white;
+/*    background: url("../../images/services/programming.jpg"), url("images/overlay.png");*/
+/*    border-radius: 0 1em 1em 0;*/
+}
+
+.service-content {
+    width: 80%;
+    margin: 0 auto;
+    text-align: justify;
+    font-size: 1.5em;
+}
+
+.service-block dl {
+    display: block;
+    margin: 0 0;
+}
+
+.service-block ul {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    flex-wrap: wrap
+}
+
+.service-block ul .icon {
+    font-size: 3em;
+    color: #1c6a38;
+}
+
+.service-block ul li {
+    text-align: center;
+    width: 33%;
+/*    margin: 1em 0;*/
+    font-weight: lighter;
+    font-size: 1.25em;
+}
+
+.service-block {
+/*    border-radius: 1em 1em 1em 1em;*/
+/*    box-shadow: 0.1em 0.1em 0.5em rgba(0, 0, 0, 0.25);*/
+}
+
+.service-block  a {
+    background: url("../../images/services/programming.jpg") no-repeat fixed center;
+    background-size: cover;
+    width: 100%;
+    height: 10em;
+    margin-bottom: 1.5em;
+}
+
+.service-block .flex {
+/*    border-radius: 0em 0em 1em 1em;*/
+    padding: 0 2em;
 }
