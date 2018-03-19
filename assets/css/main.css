@@ -2947,7 +2947,8 @@ header#header.scroll-header {
 */
 
 .scroll-header {
-    box-shadow: 0 0.1em 0.1em rgba(0, 0, 0, 0.05);
+/*    box-shadow: 0 0.1em 0.1em rgba(0, 0, 0, 0.05);*/
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
 }
 
 .scroll-header #nav .active {
@@ -3659,7 +3660,7 @@ section.wrapper .service-header {
     display: flex;
     background-color: #f07e1c;
     color: white;
-    margin: 0 1em 2e0;
+    margin: 0 0 2em 0;
 /*    border-radius: 1em 1em 0em 0em;*/
 /*    box-shadow: 0.1em 0.1em 0.5em rgba(0, 0, 0, 0.25);*/
 /*    box-shadow: 0 0.1em 0em rgba(0, 0, 0, 0.1);*/
@@ -3678,7 +3679,7 @@ section.wrapper .service-header {
 /*    color: white;*/
     padding: 1em 2em;
     margin: 0;
-    font-size: 2em;
+/*    font-size: 2em;*/
 /*    letter-spacing: 0.075em;*/
 /*    font-weight: bold;*/
 }
@@ -3705,45 +3706,44 @@ section.wrapper h2:after {
 /*    width: 80%;*/
     margin: 0 auto;
     text-align: justify;
-    font-size: 1.10em;
+/*    font-size: 1.1em;*/
 }
 
+/*
 .service-block dl {
-    display: block;
-    margin: 0 0;
-/*    background-color: rgba(0, 0, 0, 0.025);*/
+    margin: 0 auto;
     padding: 2em;
 }
+*/
 
 .service-block ul {
-    display: flex;
-    list-style: none;
-    padding: 0;
-    flex-wrap: wrap
+    list-style-image: url('../../images/icons/favicon-16x16.png');
+/*    display: flex;*/
+/*    list-style: none;*/
+/*    padding: 0;*/
+/*    flex-wrap: wrap;*/
+/*    justify-content: center;*/
+    line-height: 2em;
 }
 
+/*
 .service-block ul .icon {
     font-size: 3em;
     color: #1c6a38;
 }
+*/
 
+/*
 .service-block ul li {
     text-align: center;
-    width: 30%;
-/*    margin: 1em 0;*/
-/*    font-weight: lighter;*/
     font-size: 1em;
     background-color: white;
-    margin: 0.5em auto;
+    margin: 0.5em 0.5em;
     padding: 1em;
-/*    box-shadow: inset 0.01em 0.01em 0.1em 0.05em rgba(0, 0, 0, 0.1);*/
     box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    width: 10em;
 }
-
-.service-block {
-/*    border-radius: 1em 1em 1em 1em;*/
-/*    box-shadow: 0.1em 0.1em 0.5em rgba(0, 0, 0, 0.25);*/
-}
+*/
 
 /*
 .service-block  a#software {
@@ -3761,6 +3761,8 @@ section.wrapper h2:after {
 }
 
 .service-block .button {
+    display: block;
+    width: 50%;
     margin: 0 auto;
 }
 
@@ -3785,20 +3787,26 @@ section.wrapper h2:after {
     }
     
     .service-block .flex .service-content {
-/*        margin: 0;*/
         width: 90%;
-/*        font-size: 1.25em;*/
     }
     
+/*
     .service-block dl {
         padding: 0;
     }
+*/
     
+/*
     .service-block dl dd {
         margin: 0;
     }
+*/
     
+/*
     .service-block dl li {
         width: 100%;
+        display: block;
         font-size: 1.25em;
+    }
+*/
 }
