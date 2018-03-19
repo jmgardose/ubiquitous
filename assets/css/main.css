@@ -3654,6 +3654,7 @@ nav ul li {
     width: 80%;
     margin: 0 auto;
 */
+    text-align: center;
 }
 
 section.wrapper .service-header {
@@ -3761,8 +3762,8 @@ section.wrapper h2:after {
 }
 
 .service-block .button {
-    display: block;
-    width: 50%;
+    display: inline-block;
+/*    width: 50%;*/
     margin: 0 auto;
 }
 
@@ -3775,7 +3776,7 @@ section.wrapper h2:after {
     
     section.wrapper .service-header .icon {
         font-size: 3em;
-        line-height: 3em;
+/*        line-height: 3em;*/
     }
     
     section.wrapper .service-header h3 {
@@ -3790,6 +3791,11 @@ section.wrapper h2:after {
         width: 90%;
     }
     
+/*
+    .service-block .button {
+        width: 100%;
+    }
+*/
 /*
     .service-block dl {
         padding: 0;
