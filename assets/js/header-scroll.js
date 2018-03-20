@@ -28,6 +28,18 @@ window.onload = function () {
         if (window.pageYOffset >= sticky * 4) {
             document.getElementById('header').classList.add("scroll-header");
             document.getElementById('header').classList.add("hide-header");
+
+            // This should only work if the user is not in the home page
+            if (!(typeof banner != "undefined" && banner != null)) {
+                // If scrolling down, hide the header
+                if (scrollTop > prevScrollTop) {
+                    console.log('Hiding header...');
+                    document.getElementById('header').classList.add("hide-header");
+                } else { // If scrolling up, show the header
+                    document.getElementById('header').classList.remove("hide-header");
+                    console.log('Showing header...');
+                }
+            }
         } else {
             document.getElementById('header').classList.remove("scroll-header");
             document.getElementById('header').classList.remove("hide-header");
