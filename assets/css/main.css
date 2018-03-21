@@ -3680,3 +3680,7 @@ article.feature h2::after {
     font-size: 1em;
     font-weight: normal;
 }
+
+.career-information {
+    width: 50%;
+}
