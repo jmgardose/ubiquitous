@@ -3675,7 +3675,7 @@ article.feature h2::after {
     font-size: 2em;
 }
 
-#career-contact label {
+label {
     text-align: left;
     font-size: 1em;
     font-weight: normal;
