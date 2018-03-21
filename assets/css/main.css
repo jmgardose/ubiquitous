@@ -3240,31 +3240,68 @@ header#header.scroll-header {
 
 /* Footer */
 
-#footer {
+.footer {
     padding: 2em 0;
     background: #1c6a38;
-    color: #fff;
-    text-align: center;
+    
+    background-color: rgba(144, 144, 144, 0.075);
+    color: #555;
+    text-align: left;
 }
 
-#footer h3 {
-    color: #FFF;
+.footer.dark {
+    background-color: #1c6a38;
+    color: #fff;
+    padding: 0.75em 0em;
+} 
+
+.footer .icons {
+    margin: 0;
+}
+
+.footer.dark .icon {
+    color: #fff;
+}
+
+.footer .flex img {
+    box-shadow: none;
+}
+
+.footer h3 {
+    color: #555;
     margin-bottom: 2em !important;
 }
 
-#footer label {
-    text-align: left;
-    color: #FFF;
+.footer ul {
+    list-style: none;
 }
 
-#footer .copyright {
+.footer ul li {
+    color: #555;
+}
+
+.footer a {
+    color: #555;
+}
+
+.footer label {
+    text-align: left;
+    color: #555;
+}
+
+footer header {
+    font-size: 1.25em;
+    font-weight: lighter;
+}
+
+.footer .copyright {
     color: white;
     font-size: 0.8em;
     margin: 0;
     padding: 0;
 }
 
-#footer .letter_q {
+.footer .letter_q {
     color: rgba(255, 116, 0, 0.90);
     font-size: 1.4em;
     display: inline-block;
@@ -3272,46 +3309,52 @@ header#header.scroll-header {
     padding-bottom: 3px;
 }
 
-#footer .follow_us {
+.footer .follow_us {
     margin-bottom: 0;
 }
 
-#footer .icon {
-    color: #FFF;
+.footer .icon {
+    color: #555;
     font-size: 1.2em;
 
     -moz-transition: -moz-transform 0.2s ease;
     -webkit-transition: -webkit-transform 0.2s ease;
     -ms-transition: -ms-transform 0.2s ease;
     transition: transform 0.2s ease;
+    
+    margin-right: 0.5em;
 }
 
-#footer .icon:hover {
+.footer .icon:hover {
     transform: scale(1.1);
 }
 
-#footer .copyright a {
+.footer .copyright {
+    margin-top: 1.5em;
+}
+
+.footer .copyright a {
     color: white;
     text-decoration: none;
 }
 
-#footer .copyright a:hover {
-    color: #FFF;
-}
-
-#footer.contact input[type="text"], #footer.contact input[type="email"], #footer.contact textarea {
-    background: white;
+.footer .copyright a:hover {
     color: #fff;
 }
 
+.footer.contact input[type="text"], .footer.contact input[type="email"], .footer.contact textarea {
+    background: white;
+    color: #555;
+}
+
 @media screen and (max-width: 980px) {
-    #footer {
+    .footer {
         padding: 4em 0;
     }
 }
 
 @media screen and (max-width: 736px) {
-    #footer {
+    .footer {
         padding: 3em 0;
     }
 }
