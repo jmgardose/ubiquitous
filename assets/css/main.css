@@ -3684,3 +3684,9 @@ article.feature h2::after {
 .career-information {
     width: 50%;
 }
+
+@media screen and (max-width: 480px) {
+    .career-information {
+        width: 100%;
+    }
+}
