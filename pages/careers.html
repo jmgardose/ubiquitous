@@ -284,42 +284,47 @@
         <footer class="align-center">
             <a class="button apply_button">APPLY FOR THIS JOB</a>
         </footer>
-
     </div>
+
+</section>
+    
+<section id="career-contact">
+        <div class="inner align-center">
+            <h3>Get in touch</h3>
+
+            <form id="gform" method="POST" class="pure-form pure-form-stacked" data-email="example@email.net"
+                  action="https://script.google.com/macros/s/AKfycbzht3o9p0lzRb56dXgO9kBFFG_JMNEz_0JPJrofUqOt2_NA4eU/exec">
+
+                <div class="field half first">
+                    <label for="name">Name</label>
+                    <input name="name" id="name" type="text" placeholder="Enter your name" required>
+                </div>
+                <div class="field half">
+                    <label for="email">Email</label>
+                    <input name="email" id="email" type="email" placeholder="yourEmail@email.com" required>
+                </div>
+                <div class="field">
+                    <label for="message">Message</label>
+                    <textarea name="message" id="message" rows="6" placeholder="Enter your message" required></textarea>
+                </div>
+                <input id="honeypot" type="text" name="honeypot" value=""/>
+                <ul class="actions">
+                    <li><input value="Send Your Message" class="button alt" type="submit"></li>
+                </ul>
+            </form>
+
+            <div class="align-center" style="display:none;height:480px;" id="thankyou_message">
+                <h2><em>Thanks</em> for contacting us!
+                    We will get back to you soon!</h2>
+            </div>
+
+        </div>
 
 </section>
 
 <!-- Footer -->
-<footer id="footer" class="contact">
+<footer id="footer">
     <div class="inner">
-        <h3>Get in touch</h3>
-
-        <form id="gform" method="POST" class="pure-form pure-form-stacked" data-email="example@email.net"
-              action="https://script.google.com/macros/s/AKfycbzht3o9p0lzRb56dXgO9kBFFG_JMNEz_0JPJrofUqOt2_NA4eU/exec">
-
-            <div class="field half first">
-                <label for="name">Name</label>
-                <input name="name" id="name" type="text" placeholder="Enter your name" required>
-            </div>
-            <div class="field half">
-                <label for="email">Email</label>
-                <input name="email" id="email" type="email" placeholder="yourEmail@email.com" required>
-            </div>
-            <div class="field">
-                <label for="message">Message</label>
-                <textarea name="message" id="message" rows="6" placeholder="Enter your message" required></textarea>
-            </div>
-            <input id="honeypot" type="text" name="honeypot" value=""/>
-            <ul class="actions">
-                <li><input value="Send Your Message" class="button alt" type="submit"></li>
-            </ul>
-        </form>
-
-        <div class="align-center" style="display:none;height:480px;" id="thankyou_message">
-            <h2><em>Thanks</em> for contacting us!
-                We will get back to you soon!</h2>
-        </div>
-
         <p class="follow_us">connect with us</p>
         <ul class="icons">
             <li><a href="#" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
