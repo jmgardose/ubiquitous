@@ -2922,8 +2922,8 @@ header#header.scroll-header {
 }
 
 .scroll-header #nav .active {
-    color: white;
-    box-shadow: 0 -1em #f07e1c, inset 0em 4em #f07e1c, 0 0.38em #f07e1c;
+    color: #f07e1c;
+/*    box-shadow: 0 -1em #f07e1c, inset 0em 4em #f07e1c, 0 0.38em #f07e1c;*/
 }
 
 .scroll-header #nav .active:hover a {
