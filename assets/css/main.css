@@ -3603,7 +3603,8 @@ section.wrapper h2:after {
 }
 
 .service-block ul {
-    list-style-image: url('../../images/icons/favicon-16x16.png');
+/*    list-style-image: url('../../images/icons/favicon-16x16.png');*/
+    color: #1c6a38;
     line-height: 2em;
 }
 
@@ -3633,4 +3634,20 @@ section.wrapper h2:after {
     .service-block .flex .service-content {
         width: 90%;
     }
+}
+
+article.feature h2::after {
+    content: none;
+}
+
+.about-header * {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.about-header h3 {
+    margin-right: 1em;
+    margin-bottom: 0;
+    font-size: 3em;
+    font-weight: lighter;
 }
