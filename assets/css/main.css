@@ -2589,7 +2589,7 @@ button,
     transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out, box-shadow 0.2s ease-in-out, color 0.2s ease-in-out;;
     background-color: #1c6a38;
     color: white !important;
-    border-radius: 30px;
+/*    border-radius: 30px;*/
     border: 0;
     cursor: pointer;
     display: inline-block;
@@ -2602,7 +2602,8 @@ button,
     text-align: center;
     text-decoration: none;
     text-transform: uppercase;
-    white-space: nowrap;box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    white-space: nowrap;
+/*    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);*/
 }
 
 input[type="submit"]:hover,
@@ -3069,9 +3070,9 @@ header#header.scroll-header {
     color: white;
     background-color: #f07e1c;
     padding: 0.1em 0.25em;
-    border-radius: 10%;
+/*    border-radius: 10%;*/
     font-size: 2.8em;
-    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+/*    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);*/
     transition: all 0.3s cubic-bezier(.25,.8,.25,1);
 }
 
@@ -3565,7 +3566,7 @@ section.wrapper .service-header {
     background-color: #f07e1c;
     color: white;
     margin: 0 0 2em 0;
-    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+/*    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);*/
     text-align: left;
 }
 
@@ -3650,4 +3651,13 @@ article.feature h2::after {
     margin-bottom: 0;
     font-size: 3em;
     font-weight: lighter;
+}
+
+.items .item p {
+    text-align: justify;
+}
+
+.items .item h1 {
+    text-align: left;
+    font-size: 1.5em;
 }
