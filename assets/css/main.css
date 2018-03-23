@@ -3703,6 +3703,24 @@ section.wrapper h2:after {
     margin: 0 auto;
 }
 
+.service-block .mobile {
+    display: none;
+}
+
+@media screen and (max-width: 980px) {
+    .service-block .desktop {
+        display: none;
+    }
+    
+    .service-block .mobile {
+        display: block;
+    }
+    
+    .service-block .flex .col.col2 {
+        width: 100% !important;
+    }
+}
+
 @media screen and (max-width: 480px) {
     section.wrapper .service-header {
         margin-left: 0;
