@@ -1774,13 +1774,13 @@ section .rightCut {
 
 @media screen and (max-width: 980px) {
     section.wrapper, article.wrapper {
-        padding: 4em 0;
+        padding: 6em 0;
     }
 }
 
 @media screen and (max-width: 736px) {
     section.wrapper, article.wrapper {
-        padding: 3em 0;
+        padding: 5em 0;
     }
 
     section.wrapper .avatar {
@@ -3649,6 +3649,7 @@ section.wrapper .service-header {
     color: white;
     font-size: 4em;
     padding: 0 0.25em;
+    border-radius: 50%;
 }
 
 .service-header h3 {
@@ -3676,6 +3677,10 @@ section.wrapper h2:after {
 .service-content {
     margin: 0 auto;
     text-align: justify;
+}
+
+.service-content li a:hover {
+    color: #f07e1c;
 }
 
 .service-block ul {
