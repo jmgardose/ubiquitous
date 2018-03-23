@@ -3636,7 +3636,7 @@ nav ul li {
 }
 
 #banner header {
-    text-align: justify;
+    text-align: left;
     width: 60%;
     margin: 0 auto 3em;
 }
