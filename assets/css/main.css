@@ -3707,7 +3707,7 @@ section.wrapper h2:after {
     display: none;
 }
 
-@media screen and (max-width: 980px) {
+@media screen and (max-width: 737px) {
     .service-block .desktop {
         display: none;
     }
