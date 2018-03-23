@@ -3247,6 +3247,10 @@ header#header.scroll-header {
     background-color: rgba(144, 144, 144, 0.075);
     color: #555;
     text-align: left;
+    
+    border-color: rgba(0, 0, 0, 0.125);
+    border-top-width: 1px;
+    border-style: solid;
 }
 
 .footer.dark {
@@ -3280,9 +3284,25 @@ header#header.scroll-header {
     color: #555;
 }
 
+.footer ul li:hover {
+    color: #1c6a38;
+    text-decoration: underline;
+}
+
+.footer ul.icons li a:hover,
+.footer ul.icons li:hover {
+    text-decoration: none;
+}
+
 .footer a {
     color: #555;
 }
+
+.footer a:hover {
+    color: #1c6a38;
+    text-decoration: underline;
+}
+
 
 .footer label {
     text-align: left;
