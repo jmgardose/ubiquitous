@@ -3651,7 +3651,7 @@ nav ul li {
 
 section.wrapper .service-header {
     display: flex;
-    background-color: #f07e1c;
+/*    background-color: #f07e1c;*/
     color: white;
     margin: 0 0 2em 0;
 /*    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);*/
@@ -3661,9 +3661,10 @@ section.wrapper .service-header {
 
 .service-header .icon {
     color: white;
+    background-color: #f07e1c;
     font-size: 4em;
     padding: 0 0.25em;
-    border-radius: 50%;
+    border-radius: 0.5em;
 }
 
 .service-header h3 {
@@ -3790,11 +3791,87 @@ label {
 }
 
 .career-information {
-    width: 50%;
+    width: 75%;
+}
+
+.career-block .career-content {
+    background-color: rgba(144, 144, 144, 0.075);
+/*    border-radius: 0 0 2em 2em;*/
+    border-radius: 2em;
+    padding: 4em;
+}
+
+.career-block .career-content h4 {
+    color: #fff;
+    background-color: #1c6a38;
+/*    background-color: #f07e1c;*/
+/*    border-radius: 2em;*/
+    padding: 0.1em 1em;
+/*    border-radius: 0.15em;*/
+    border-radius: 1em;
+/*    border-radius: 2em 2em 0 0;*/
+/*    width: 50%;*/
+}
+
+.career-block .button {
+    margin-top: 4em;
+/*    display: block;*/
+}
+
+section.wrapper .career-block header {
+/*    background-color: #f07e1c;*/
+/*    background-color: #1c6a38;*/
+    padding: 2em 4em;
+    border-radius: 2em 2em 0 0;
+    margin: 0;
+}
+
+section.wrapper .career-block header h3 {
+    margin-top: 1.25em;
+    margin-bottom: 0.75em;
+}
+
+.career-block header * {
+/*    color: white;*/
+    margin-bottom: 0;
+/*    line-height: 2em;*/
+}
+
+.career-banner {
+    width: 15em;
+    height: 10em;
+    margin: 0 auto;
+    
+    border-style: solid;
+    border-width: 1px;
+    border-color: rgba(144, 144, 144, 0.25);
+}
+
+#career-jp {
+    background: url("../../images/banner/flag-jp.png") no-repeat;
+    background-size: 15em 10em;
+}
+
+#career-ph {
+    background: url("../../images/banner/flag-ph.png") no-repeat;
+    background-size: 15em 10em;
 }
 
 @media screen and (max-width: 480px) {
     .career-information {
         width: 100%;
+    }
+    
+    .career-information .career-content {
+        width: 100%;
+        padding: 1em;
+    }
+    
+    .career-information .career-content {
+        margin: 0;
+    }
+    
+    section.wrapper .career-block header {
+        padding: 0.75em 1.25em;
     }
 }
