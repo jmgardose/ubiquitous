@@ -1871,6 +1871,7 @@ header h4 + p, header h5 + p, header h6 + p {
 
 .feature .image img {
     max-width: 100%;
+    padding: 1em;
 }
 
 .feature .content {
@@ -1922,6 +1923,7 @@ header h4 + p, header h5 + p, header h6 + p {
 
 .feature {
     background-color: rgba(144, 144, 144, 0.075);
+    border-radius: 2em;
 }
 
 /* Flex */
