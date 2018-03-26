@@ -2753,6 +2753,7 @@ button:disabled,
     .button {
         padding: 0;
         width: 100%;
+        font-size: 0.65em;
     }
 
 }
