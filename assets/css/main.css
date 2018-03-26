@@ -3705,8 +3705,11 @@ section.wrapper h2:after {
 
 .service-block ul {
 /*    list-style-image: url('../../images/icons/favicon-16x16.png');*/
-    color: #1c6a38;
     line-height: 2em;
+}
+
+.service-block ul a {
+    color: #1c6a38;
 }
 
 .service-block .button {
