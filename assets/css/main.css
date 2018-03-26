@@ -3268,12 +3268,16 @@ header#header.scroll-header {
     border-color: rgba(0, 0, 0, 0.125);
     border-top-width: 1px;
     border-style: solid;
+    
+    margin-top: 10em;
 }
 
 .footer.dark {
     background-color: #1c6a38;
     color: #fff;
     padding: 0.75em 0em;
+    
+    margin: 0;
 } 
 
 .footer .icons {
