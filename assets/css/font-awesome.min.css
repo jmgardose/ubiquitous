@@ -667,3 +667,7 @@
 .fa-fa:before {
   content: "\f2b4";
 }
+
+.fa-arrow-up::before {
+  content: "\f062";
+}
