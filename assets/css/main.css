@@ -1782,7 +1782,6 @@ section .rightCut {
 
 @media screen and (max-width: 736px) {
     section.wrapper, article.wrapper {
-/*        padding: 5em 0;*/
     }
 
     section.wrapper .avatar {
@@ -2351,12 +2350,9 @@ ol li {
 
 ul {
     list-style: disc;
-/*    margin: 0 0 2em 0;*/
-/*    padding-left: 1em;*/
 }
 
 ul li {
-    /*padding-left: 0.5em;*/
 }
 
 ul.alt {
@@ -2607,7 +2603,6 @@ button,
     text-decoration: none;
     text-transform: uppercase;
     white-space: nowrap;
-/*    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);*/
 }
 
 input[type="submit"]:hover,
@@ -2767,18 +2762,14 @@ button:disabled,
     background: white;
     top: 0;
     position: fixed;
-/*    padding: 0.7em 0 3.6em 0;*/
 }
 
 #header {
     color: #fff;
     cursor: default;
-/*    height: 3.25em;*/
     left: 0;
-/*    line-height: 3.25em;*/
     position: absolute;
     text-align: right;
-/*    top: 2em;*/
     width: 100%;
     z-index: 10006;
     top: 4em;
@@ -2795,7 +2786,6 @@ button:disabled,
 #header .logo {
     background: url("../../images/ubiq_logo_x_long_light.png") no-repeat;
     width: 22.1875em;
-/*    height: 3.25em;*/
     left: 0;
     position: absolute;
     -moz-transition: scale 0.2s ease-in-out;
@@ -2836,8 +2826,6 @@ button:disabled,
 #header a.navPanelToggle {
     display: none;
     text-decoration: none;
-/*    height: 4em;*/
-/*    width: 4em;*/
     z-index: 10003;
 }
 
@@ -2870,7 +2858,6 @@ button:disabled,
 
 header#header.scroll-header {
     color: #555;
-/*    background: rgba(255, 255, 255, 0.9);*/
     -moz-transition: top 0.5s ease-in-out;
     -webkit-transition: top 0.5s ease-in-out;
     -ms-transition: top 0.5s ease-in-out;
@@ -2890,7 +2877,6 @@ header#header.scroll-header {
     }
     
     header#header.scroll-header {
-/*        height: 5.5em;*/
     }
 }
 
@@ -2941,7 +2927,6 @@ header#header.scroll-header {
 
 .scroll-header #nav .active {
     color: #f07e1c;
-/*    box-shadow: 0 -1em #f07e1c, inset 0em 4em #f07e1c, 0 0.38em #f07e1c;*/
 }
 
 .scroll-header #nav .active:hover a {
@@ -3090,7 +3075,6 @@ header#header.scroll-header {
     padding: 0.3em 0.6em;
     border-radius: 50%;
     font-size: 2.8em;
-/*    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);*/
     
     display: inline-block;
     margin-bottom: 0.25em;
@@ -3656,10 +3640,8 @@ nav ul li {
 
 section.wrapper .service-header {
     display: flex;
-/*    background-color: #f07e1c;*/
     color: white;
     margin: 0 0 2em 0;
-/*    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);*/
     text-align: left;
     border-radius: 2em;
 }
@@ -3704,7 +3686,6 @@ section.wrapper h2:after {
 }
 
 .service-block ul {
-/*    list-style-image: url('../../images/icons/favicon-16x16.png');*/
     line-height: 2em;
 }
 
@@ -3803,8 +3784,6 @@ label {
 }
 
 .career-block .career-content {
-/*    background-color: rgba(144, 144, 144, 0.075);*/
-/*    border-radius: 0 0 2em 2em;*/
     border-radius: 2em;
     padding: 4em;
 }
@@ -3812,23 +3791,15 @@ label {
 .career-block .career-content h4 {
     color: #fff;
     background-color: #1c6a38;
-/*    background-color: #f07e1c;*/
-/*    border-radius: 2em;*/
     padding: 0.1em 1em;
-/*    border-radius: 0.15em;*/
     border-radius: 1em;
-/*    border-radius: 2em 2em 0 0;*/
-/*    width: 50%;*/
 }
 
 .career-block .button {
     margin-top: 4em;
-/*    display: block;*/
 }
 
 section.wrapper .career-block header {
-/*    background-color: #f07e1c;*/
-/*    background-color: #1c6a38;*/
     padding: 2em 4em;
     border-radius: 2em 2em 0 0;
     margin: 0;
@@ -3840,9 +3811,7 @@ section.wrapper .career-block header h3 {
 }
 
 .career-block header * {
-/*    color: white;*/
     margin-bottom: 0;
-/*    line-height: 2em;*/
 }
 
 .career-banner {
