@@ -3866,35 +3866,62 @@ section.wrapper .career-block header h3 {
 }
 
 #scroll-to-top {
-    background-color: #f07e1c;
-    color: #fff;
+    color: rgba(5, 5, 5, 0.5);
     
     display: none;
 
     position: fixed;
-    bottom: 1em;
-    right: 1em;
+    bottom: 2em;
+    right: 2em;
 
-    margin: 20px;
+    margin: 0 auto;
 
     text-align: center;
     vertical-align: middle;
 
-    width: 60px;
-    height: 60px;
-    line-height: 60px;
-    font-size: 1.75em;
+    padding: 0.5em 1em;
+    
+    font-size: 1em;
 
-    border-radius: 50px;
-
+    border-style: solid;
+    border-width: 1px;
+    
+    font-family: "Source Sans Pro", Arial, Helvetica, sans-serif;
+    
     cursor: pointer;
 
     -moz-user-select: none;
     user-select: none;
+    
+    z-index: 10010;
+    
+    transition: bottom 0.2s ease-in-out, color 0.2s ease-in-out;
 }
 
-#scroll-to-top::before {
-    content: "\f062";
+#scroll-to-top:hover {
+    background-color: rgba(5, 5, 5, 0.05);
+}
+
+#scroll-to-top .icon {
+    margin-left: 0.5em;
+}
+
+#scroll-to-top.raise {
+    bottom: 9em !important; 
+}
+
+
+@media screen and (max-width: 1121px) {
+    #scroll-to-top.raise {
+        bottom: 13.5em !important;
+    }
+}
+
+
+@media screen and (max-width: 737px) {
+    #scroll-to-top.raise {
+        bottom: 18.5em !important;
+    }
 }
 
 @media screen and (max-width: 480px) {
@@ -3916,7 +3943,17 @@ section.wrapper .career-block header h3 {
     }
     
     #scroll-to-top {
-        bottom: 0.25em;
-        right: 0.25em;
+        bottom: 1.5em;
+        right: 1.5em;
+    }
+    
+    #scroll-to-top.raise {
+        bottom: 18.5em !important;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    #scroll-to-top.raise {
+        bottom: 22.5em !important;
     }
 }

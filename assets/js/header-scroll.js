@@ -7,6 +7,9 @@ window.onload = function () {
     var navbar = document.getElementById('header');
     var banner = document.getElementById('banner');
     var sticky = navbar.offsetTop;
+    
+    var footer = document.getElementsByClassName('footer dark')[0];
+    var scrollToTop = document.getElementById("scroll-to-top");
 
     var prevScrollTop = -1;
 
@@ -64,6 +67,15 @@ window.onload = function () {
             }
         } else {
 
+        }
+        
+        var rect = scrollToTop.getBoundingClientRect();
+        var rect2 = footer.getBoundingClientRect();
+        
+        if ((rect.top + scrollToTop.offsetHeight * 2) > (rect2.top)) {
+            scrollToTop.classList.add("raise");
+        } else {
+            scrollToTop.classList.remove("raise");
         }
 
         prevScrollTop = scrollTop;
