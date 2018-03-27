@@ -69,13 +69,15 @@ window.onload = function () {
 
         }
         
-        var rect = scrollToTop.getBoundingClientRect();
-        var rect2 = footer.getBoundingClientRect();
-        
-        if ((rect.top + scrollToTop.offsetHeight * 2) > (rect2.top)) {
-            scrollToTop.classList.add("raise");
-        } else {
-            scrollToTop.classList.remove("raise");
+        if (!(typeof scrollToTop != "undefined" || scrollToTop != null)) {
+            var rect = scrollToTop.getBoundingClientRect();
+            var rect2 = footer.getBoundingClientRect();
+
+            if ((rect.top + scrollToTop.offsetHeight * 2) > (rect2.top)) {
+                scrollToTop.classList.add("raise");
+            } else {
+                scrollToTop.classList.remove("raise");
+            }
         }
 
         prevScrollTop = scrollTop;
