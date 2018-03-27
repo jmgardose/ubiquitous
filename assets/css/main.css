@@ -3865,6 +3865,38 @@ section.wrapper .career-block header h3 {
     background-size: 15em 10em;
 }
 
+#scroll-to-top {
+    background-color: #f07e1c;
+    color: #fff;
+    
+    display: none;
+
+    position: fixed;
+    bottom: 1em;
+    right: 1em;
+
+    margin: 20px;
+
+    text-align: center;
+    vertical-align: middle;
+
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
+    font-size: 1.75em;
+
+    border-radius: 50px;
+
+    cursor: pointer;
+
+    -moz-user-select: none;
+    user-select: none;
+}
+
+#scroll-to-top::before {
+    content: "\f062";
+}
+
 @media screen and (max-width: 480px) {
     .career-information {
         width: 100%;
@@ -3881,5 +3913,10 @@ section.wrapper .career-block header h3 {
     
     section.wrapper .career-block header {
         padding: 0.75em 1.25em;
+    }
+    
+    #scroll-to-top {
+        bottom: 0.25em;
+        right: 0.25em;
     }
 }
