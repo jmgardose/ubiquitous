@@ -3803,7 +3803,7 @@ label {
 }
 
 .career-block .career-content {
-    background-color: rgba(144, 144, 144, 0.075);
+/*    background-color: rgba(144, 144, 144, 0.075);*/
 /*    border-radius: 0 0 2em 2em;*/
     border-radius: 2em;
     padding: 4em;
