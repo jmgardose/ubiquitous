@@ -69,7 +69,7 @@ window.onload = function () {
 
         }
         
-        if (!(typeof scrollToTop != "undefined" || scrollToTop != null)) {
+        if (scrollToTop != null) {
             var rect = scrollToTop.getBoundingClientRect();
             var rect2 = footer.getBoundingClientRect();
 
