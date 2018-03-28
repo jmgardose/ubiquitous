@@ -65,15 +65,10 @@ window.onload = function () {
                     document.getElementById('header').classList.remove("hide-header");
                 }
             }
-        } else {
-
         }
         
         if (scrollToTop != null) {
-            var rect = scrollToTop.getBoundingClientRect();
-            var rect2 = footer.getBoundingClientRect();
-
-            if ((rect.top + scrollToTop.offsetHeight * 2) > (rect2.top)) {
+            if ((window.innerHeight + window.pageYOffset) >= document.body.offsetHeight) {
                 scrollToTop.classList.add("raise");
             } else {
                 scrollToTop.classList.remove("raise");
