@@ -3284,6 +3284,7 @@ header#header.scroll-header {
 
 .footer ul {
     list-style: none;
+    white-space: nowrap
 }
 
 .footer ul li {
@@ -3875,21 +3876,7 @@ section.wrapper .career-block header h3 {
 }
 
 #scroll-to-top.raise {
-    bottom: 9em !important; 
-}
-
-
-@media screen and (max-width: 1121px) {
-    #scroll-to-top.raise {
-        bottom: 13.5em !important;
-    }
-}
-
-
-@media screen and (max-width: 737px) {
-    #scroll-to-top.raise {
-        bottom: 18.5em !important;
-    }
+    bottom: 12.75em !important; 
 }
 
 @media screen and (max-width: 480px) {
@@ -3913,15 +3900,5 @@ section.wrapper .career-block header h3 {
     #scroll-to-top {
         bottom: 1.5em;
         right: 1.5em;
-    }
-    
-    #scroll-to-top.raise {
-        bottom: 18.5em !important;
-    }
-}
-
-@media screen and (max-width: 320px) {
-    #scroll-to-top.raise {
-        bottom: 22.5em !important;
     }
 }
