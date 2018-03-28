@@ -3644,6 +3644,7 @@ section.wrapper .service-header {
     margin: 0 0 2em 0;
     text-align: left;
     border-radius: 2em;
+    align-items: center;
 }
 
 .service-header .icon {
@@ -3656,8 +3657,7 @@ section.wrapper .service-header {
 
 .service-header h3 {
     color: #f07e1c;
-    padding: 1em 2em;
-    margin: 0;
+    margin: 0 0 0 1.5em;
 }
 
 section.wrapper h2:after {
