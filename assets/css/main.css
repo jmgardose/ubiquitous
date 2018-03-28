@@ -3444,7 +3444,6 @@ footer header {
     -ms-transition: -ms-transform 0.2s ease;
     transition: transform 0.2s ease;
     background-size: cover;
-    background: no-repeat center;
     position: absolute;
     top: 0;
     left: 0;
