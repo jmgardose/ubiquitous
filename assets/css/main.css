@@ -1721,7 +1721,8 @@ section.special article, article.special article {
 }
 
 section.wrapper, article.wrapper {
-    padding: 6em 0;
+/*    padding: 6em 0;*/
+    padding: 6em 0 0 0;
 }
 
 section.wrapper.adjustpad {
@@ -1776,7 +1777,8 @@ section .rightCut {
 
 @media screen and (max-width: 980px) {
     section.wrapper, article.wrapper {
-        padding: 6em 0;
+/*        padding: 6em 0;*/
+        padding: 6em 0 0 0;
     }
 }
 
