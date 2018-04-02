@@ -1721,7 +1721,6 @@ section.special article, article.special article {
 }
 
 section.wrapper, article.wrapper {
-/*    padding: 6em 0;*/
     padding: 6em 0 0 0;
 }
 
@@ -1777,7 +1776,6 @@ section .rightCut {
 
 @media screen and (max-width: 980px) {
     section.wrapper, article.wrapper {
-/*        padding: 6em 0;*/
         padding: 6em 0 0 0;
     }
 }
@@ -3920,10 +3918,6 @@ section.wrapper .career-block header h3 {
 }
 
 .list-block h3 {
-/*
-    color: #fff;
-    background-color: #1c6a38;
-*/
     padding: 0.1em 1em;
     border-radius: 1em;
 }

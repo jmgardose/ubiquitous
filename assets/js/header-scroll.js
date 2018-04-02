@@ -67,7 +67,12 @@ window.onload = function () {
             }
         }
         
+        // If the scroll-to-top button is present in the page
+        // Note: The button is not present in the contact page
+        //          as there's not much to scroll through
         if (scrollToTop != null) {
+            
+            // If the user has scrolled to the very bottom of the page
             if ((window.innerHeight + window.pageYOffset) >= document.body.offsetHeight) {
                 scrollToTop.classList.add("raise");
             } else {
@@ -75,6 +80,8 @@ window.onload = function () {
             }
         }
 
+        // Save the previous position of the scroll
+        // to check later if the user has scrolled up or down
         prevScrollTop = scrollTop;
     };
 }
