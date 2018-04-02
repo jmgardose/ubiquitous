@@ -1721,7 +1721,8 @@ section.special article, article.special article {
 }
 
 section.wrapper, article.wrapper {
-    padding: 6em 0;
+/*    padding: 6em 0;*/
+    padding: 6em 0 0 0;
 }
 
 section.wrapper.adjustpad {
@@ -1776,7 +1777,8 @@ section .rightCut {
 
 @media screen and (max-width: 980px) {
     section.wrapper, article.wrapper {
-        padding: 6em 0;
+/*        padding: 6em 0;*/
+        padding: 6em 0 0 0;
     }
 }
 
@@ -3284,6 +3286,7 @@ header#header.scroll-header {
 
 .footer ul {
     list-style: none;
+    white-space: nowrap
 }
 
 .footer ul li {
@@ -3444,7 +3447,6 @@ footer header {
     -ms-transition: -ms-transform 0.2s ease;
     transition: transform 0.2s ease;
     background-size: cover;
-    background: no-repeat center;
     position: absolute;
     top: 0;
     left: 0;
@@ -3644,6 +3646,7 @@ section.wrapper .service-header {
     margin: 0 0 2em 0;
     text-align: left;
     border-radius: 2em;
+    align-items: center;
 }
 
 .service-header .icon {
@@ -3656,8 +3659,7 @@ section.wrapper .service-header {
 
 .service-header h3 {
     color: #f07e1c;
-    padding: 1em 2em;
-    margin: 0;
+    margin: 0 0 0 1.5em;
 }
 
 section.wrapper h2:after {
@@ -3764,13 +3766,16 @@ article.feature h2::after {
     font-size: 1.5em;
 }
 
+#three {
+    padding-bottom: 0;
+}
+
 #career-contact {
-    background-color: rgba(144, 144, 144, 0.075);
     padding: 2em 0;
 }
 
-#career-contact h3 {
-    font-size: 2em;
+#career-contact h2 {
+    font-size: 2.75em;
 }
 
 label {
@@ -3876,21 +3881,7 @@ section.wrapper .career-block header h3 {
 }
 
 #scroll-to-top.raise {
-    bottom: 9em !important; 
-}
-
-
-@media screen and (max-width: 1121px) {
-    #scroll-to-top.raise {
-        bottom: 13.5em !important;
-    }
-}
-
-
-@media screen and (max-width: 737px) {
-    #scroll-to-top.raise {
-        bottom: 18.5em !important;
-    }
+    bottom: 12.75em !important; 
 }
 
 @media screen and (max-width: 480px) {
@@ -3914,15 +3905,5 @@ section.wrapper .career-block header h3 {
     #scroll-to-top {
         bottom: 1.5em;
         right: 1.5em;
-    }
-    
-    #scroll-to-top.raise {
-        bottom: 18.5em !important;
-    }
-}
-
-@media screen and (max-width: 320px) {
-    #scroll-to-top.raise {
-        bottom: 22.5em !important;
     }
 }
