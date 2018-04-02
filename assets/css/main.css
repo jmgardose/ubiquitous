@@ -3639,6 +3639,7 @@ nav ul li {
     margin: 0 auto 3em;
 }
 
+/* Services Page */
 .service-block {
     text-align: center;
 }
@@ -3748,6 +3749,8 @@ article.feature h2::after {
     content: none;
 }
 
+/* About Page */
+
 .about-header * {
     display: inline-block;
     vertical-align: middle;
@@ -3772,6 +3775,8 @@ article.feature h2::after {
 #three {
     padding-bottom: 0;
 }
+
+/* Careers Page */
 
 #career-contact {
     padding: 2em 0;
@@ -3843,6 +3848,7 @@ section.wrapper .career-block header h3 {
     background-size: 15em 10em;
 }
 
+/* The scroll-to-top button at the bottom right of the screen */
 #scroll-to-top {
     color: rgba(5, 5, 5, 0.5);
     
@@ -3884,6 +3890,10 @@ section.wrapper .career-block header h3 {
     margin-left: 0.5em;
 }
 
+/* 
+    Raises the button higher so as it would not be hidden by the
+    footer's dark green background
+*/
 #scroll-to-top.raise {
     bottom: 12.75em !important; 
 }
@@ -3912,6 +3922,7 @@ section.wrapper .career-block header h3 {
     }
 }
 
+/* The sections of text containing numbered/bulleted lists in the About Page */
 .list-block {
     width: 70%;
     margin: 0 auto;
