@@ -3608,13 +3608,6 @@ footer header {
 
 }
 
-:target {
-    display: block;
-    position: relative;
-    top: -100px;
-    visibility: hidden;
-}
-
 a {
     text-decoration: none;
 }
